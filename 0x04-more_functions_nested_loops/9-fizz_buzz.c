@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+
 /**
  * main - to print fizz buzz
  * Description: printing fizzbuzz

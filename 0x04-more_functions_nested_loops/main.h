@@ -1,5 +1,7 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef MAIN_H_INCLUDED
+#define MAIN_H_INCLUDED
+
+#include <stdio.h>
 
 int _putchar(char c);
 
@@ -23,12 +25,6 @@ void print_square(int size);
 
 void print_triangle(int size);
 
-int isPrime(long int n);
-
-long int biggestFactor(long int a);
-
 void print_number(int n);
 
-int numDigits(int n);
-
-#endi
+#endif

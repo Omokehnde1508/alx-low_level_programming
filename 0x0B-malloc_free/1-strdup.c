@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
 * _strdup -> string duplicator function
@@ -8,7 +9,7 @@
 
 char *_strdup(char *str)
 {
-int i = 1, j = 0;
+	unsigned int i, j;
 
 	char *s;
 
@@ -16,30 +17,23 @@ int i = 1, j = 0;
 
 		return (NULL);
 
-	while (str[i])
+	for (i = 0; str[i]; i++)
+		;
 
-		i++;
-
-	s = (char *)malloc(i * sizeof(char) + 1);
+	i++;
+	s = malloc(i * sizeof(char));
 
 	if (s == NULL)
-
+	{
 		return (NULL);
+	}
 
-	while (j < i)
-
+	for (j = 0; j < i; j++)
 	{
 
 		s[j] = str[j];
 
-		j++;
-
 	}
-
-	s[j] = '\0';
-
 	return (s);
 
 }
-
-

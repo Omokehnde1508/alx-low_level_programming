@@ -3,7 +3,7 @@ include "lists.h"
   * free_listint - frees a lisint -t lsit.
   * @head: pointer to first elemet
   *
-  * Return: void
+  * Return: VOID
   */
 void free_listint(listint_t *head)
 {
